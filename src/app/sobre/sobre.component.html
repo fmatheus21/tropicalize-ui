@@ -1,0 +1,33 @@
+<section class="about-area section-padding" id="about">
+    <div class="container wow fadeIn">
+        <div class="row" *ngFor="let informacao of informacoes" style="padding-bottom: 100px;">
+            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                <div class="area-title text-center">
+                    <h2>{{informacao.title}}</h2>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+                <div class="about-content">
+                    <p><span class="big-text">{{informacao.letra}}</span> {{informacao.text1}}</p>
+                    <p>{{informacao.text2}}</p>
+                    <p>{{informacao.text3}}</p>
+                    <p>{{informacao.text4}}</p>
+                    <p>{{informacao.text5}}</p>
+                    <p>{{informacao.text6}}</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+                <div class="right-about-content">
+                    <h3>Valores:</h3>
+                    <p [innerHtml]="informacao.text7"></p>
+                    <p>{{informacao.text8}}</p>
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                <div class="about-author-sign text-center">
+                    <!-- <img src="./assets/img/about/about_sign.png" alt=""> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

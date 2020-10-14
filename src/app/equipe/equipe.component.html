@@ -1,0 +1,34 @@
+<section class="team-area section-padding" id="team">
+    <div class="reservation-button-area-bg" data-stellar-background-ratio="0.6"></div>
+    <div class="container wow fadeIn">
+        <div class="row">
+            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                <div class="area-title text-center">
+                    <h2>Nossa Equipe</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 team-slider">
+                <div class="single-team-member text-center" *ngFor="let equipe of equipes">
+                    <div class="team-member-img ">
+                        <img [attr.src]="equipe.image" alt="">
+                        <div class="member-social-bookmark">
+                            <ul>
+                                <li><a [attr.href]="equipe.facebook" target="__blank"><i class="fa fa-facebook"></i></a></li>
+                                <li><a [attr.href]="equipe.twitter"><i class="fa fa-twitter" target="__blank"></i></a></li>                                
+                                <li><a [attr.href]="equipe.instagram"><i class="fa fa-instagram" target="__blank"></i></a></li>                                
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="member-details">
+                        <h3>{{equipe.nome}}</h3>
+                        <p>{{equipe.descricao}}</p>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+    </div>
+</section>

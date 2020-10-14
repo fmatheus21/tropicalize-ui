@@ -1,0 +1,84 @@
+<header class="top-area" id="home">
+    <div class="header-top-area">
+        <div class="top-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7 col-lg-6 col-sm-8">
+                        <div class="call-to-action">
+                            <p>
+                                <i class="fa fa-envelope-o"></i>
+                                <span>contato@tropicalizerestaurante.com.br</span>
+                            </p>
+                            <p>
+                                <i class="fa fa-phone"></i>
+                                <span>(21) 98643-7604</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-lg-6 col-sm-4">
+                        <div class="top-social-bookmark">
+                            <ul>
+                                <li><a href="https://www.facebook.com/tropicalizerestaurante/" target="__blank"><i class="fa fa-facebook"></i></a></li>
+                                <!--<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>-->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="mainmenu-area" class="mainmenu-area">
+            <div class="mainmenu-area-bg"></div>
+            <nav class="navbar">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button class="collapsed navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-example-js-navbar-scrollspy">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+                        <a href="#home" class="navbar-brand">
+                            <img src="./assets/img/logo.png" alt="logo">
+                        </a>
+                        <a href="#home" class="navbar-brand white">
+                            <img src="./assets/img/logo.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="collapse navbar-collapse bs-example-js-navbar-scrollspy">
+
+                        <ul id="nav" class="nav navbar-nav">
+                            <li class="active"><a href="#home">Home</a> </li>
+                            <li><a href="#about">Sobre</a></li>
+                            <!--<li><a href="#promotion">Destaques</a></li>-->
+                            <li><a href="#menu">Cardápio</a></li>
+                            <!--<li><a href="#team">Equipe</a></li>-->
+                            <!--<li><a href="#gallery">Galeria</a></li>-->
+                            <li><a href="#contact">Contato</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+    </div>
+
+    <div class="slider-area">
+        <div class="pogoSlider">
+
+            <div *ngFor="let slider of sliders" class="pogoSlider-slide" data-transition="fade" data-duration="1500" [ngStyle]="{'background': 'url(' + slider.image + ') no-repeat scroll 0 0 / cover'}">
+                <h2 class="pogoSlider-slide-element" data-in="slideDown" data-out="flipX" data-duration="700">{{slider.title}}
+                </h2>
+                <h1 class="pogoSlider-slide-element" data-in="expand" data-out="flipX" data-duration="1500">
+                    <span>{{slider.subtitle}}</span>
+                </h1>
+                <h3>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScp6BSy69lEokK64fvTjT0Hqlh5LL0neBXLK5ylDZFuBD-q2g/viewform?embedded=true" target="__blank">Trabalhe Conosco</a>
+                </h3>
+            </div>
+
+        </div>
+    </div>
+
+</header>

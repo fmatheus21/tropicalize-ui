@@ -1,0 +1,26 @@
+<section class="promotions-area section-padding" id="promotion">
+    <div class="promotion-area-bg" data-stellar-background-ratio="0.6"></div>
+    <div class="container wow fadeIn">
+        <div class="row">
+            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                <div class="area-title text-center">
+                    <h2>destaques</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="menu-discount-offer col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                <div class="single-promotions" *ngFor="let oferta of ofertas">
+                    <div class="promotions-img">
+                        <img [attr.src]="oferta.image" alt="">
+                    </div>
+                    <div class="promotions-details">
+                        <h3>{{oferta.title}}</h3>
+                        <p [innerHtml]="oferta.description"></p>
+                        <!-- <a href="#" class="read-more">Order now</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
